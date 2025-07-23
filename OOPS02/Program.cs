@@ -22,8 +22,10 @@ namespace OOPS02
 
             #endregion
 
-
-
+            //polymorphism
+            //1.polymorphism methods (functions) overloading
+            //2.polymorphism methods (functions) overriding
+           // Console.WriteLine();
         }
     }
 }
