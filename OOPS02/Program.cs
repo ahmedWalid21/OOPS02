@@ -65,13 +65,25 @@ namespace OOPS02
             // reference from parennt ----> object child
 
             //TypeA ref= new TypeA();
-            TypeA a;
-            a=new TypeA();
-            a=new TypeB();
+           // TypeA a;
+           // a=new TypeA();
+           // a=new TypeB();
             //child is a parent
             //  a.B = 12;
            // a.fun1(); //static bind method
-            a.fun2();
+           // a.fun2();//Binding
+
+            //Not Binding
+
+            //TypeB b=new TypeB();
+          //  b = new TypeA();
+          //child is parent
+          // Animal--->Dog : Dog is Animal
+          // Dog --> (Dog)Animal
+
+            //TypeA Ref= new TypeA();
+           // TypeB b = (TypeB)Ref;
+
 
 
         }
