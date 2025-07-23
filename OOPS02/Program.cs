@@ -1,6 +1,5 @@
 ﻿using OOPS02.Binding;
 using OOPS02.Inheritance;
-using OOPS02.overriding;
 
 namespace OOPS02
 {
@@ -96,32 +95,35 @@ namespace OOPS02
             // when U need Binding
 
             //fullTime Employee id name address email salary
-            fullTimeEmployee b = new fullTimeEmployee()
-            {
-                id = 1,
-                name = "Ahmed",
-                email = "ahmed.a.com",
-                address = "cairo",
-                salary = 12000
+            //fullTimeEmployee b = new fullTimeEmployee()
+            //{
+            //    id = 1,
+            //    name = "Ahmed",
+            //    email = "ahmed.a.com",
+            //    address = "cairo",
+            //    salary = 12000
 
 
-            };
-            partTimeEmployee w = new partTimeEmployee()
-            {
-                id = 11,
-                name = "Ali",
-                email = "ali.a.com",
-                address = "Alex",
-                HourRate=300,
-                NumberOfHour=200
-            };
+            //};
+            //partTimeEmployee w = new partTimeEmployee()
+            //{
+            //    id = 11,
+            //    name = "Ali",
+            //    email = "ali.a.com",
+            //    address = "Alex",
+            //    HourRate=300,
+            //    NumberOfHour=200
+            //};
 
-           // EmployeeProcess(w);
+            // EmployeeProcess(w);
             //NullReferenceException
-            
-
-
-
+            TypeA w= new TypeD();
+         //  w = new TypeB();//A is a parent of B
+          //  w= new TypeC();// A is indirect Parent of C
+          //  w=new TypeD();//A is indirect parent of D
+            w.A = 12;
+            w.fun1();
+            w.fun2();
 
 
         }
