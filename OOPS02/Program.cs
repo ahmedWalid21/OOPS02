@@ -53,16 +53,25 @@ namespace OOPS02
             //there are more than one function (in different class) these have same name 
             // and signature with different behaviour
 
-            TypeB b = new TypeB() { A = 12, B = 13 };
-            Console.WriteLine(b.A);
-                Console.WriteLine(b.B);
+            // TypeB b = new TypeB() { A = 12, B = 13 };
+            // Console.WriteLine(b.A);
+            //   Console.WriteLine(b.B);
             //  b.A = 12;
-           // b.B = 13;
-            b.fun1();
-            b.fun2();
+            // b.B = 13;
+            //  b.fun1();
+            //  b.fun2();
 
+            //Binding
+            // reference from parennt ----> object child
 
-
+            //TypeA ref= new TypeA();
+            TypeA a;
+            a=new TypeA();
+            a=new TypeB();
+            //child is a parent
+            //  a.B = 12;
+           // a.fun1(); //static bind method
+            a.fun2();
 
 
         }

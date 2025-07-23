@@ -19,6 +19,9 @@ namespace OOPS02.overriding
             Console.WriteLine("fun1 from typeB");
         }
         //must be not private and virtaul
+
+        //dynamic binding
+        //CLR will bind function call based on object type not reference type
         public override void fun2()
         {
             Console.WriteLine($"A: {A}, B: {B}");
