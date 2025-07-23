@@ -1,4 +1,5 @@
-﻿using OOPS02.Inheritance;
+﻿using OOPS02.Binding;
+using OOPS02.Inheritance;
 using OOPS02.overriding;
 
 namespace OOPS02
@@ -19,7 +20,15 @@ namespace OOPS02
         }
         static void Main(string[] args)
         {
-
+            static void EmployeeProcess(Empoyee e)
+            {
+                if(e is not null)
+                {
+                    e.fun1();
+                    e.fun2();
+                }
+                
+            }
 
             #region Inheritance
             // Parent p = new Parent(1, 2);
@@ -65,24 +74,53 @@ namespace OOPS02
             // reference from parennt ----> object child
 
             //TypeA ref= new TypeA();
-           // TypeA a;
-           // a=new TypeA();
-           // a=new TypeB();
+            // TypeA a;
+            // a=new TypeA();
+            // a=new TypeB();
             //child is a parent
             //  a.B = 12;
-           // a.fun1(); //static bind method
-           // a.fun2();//Binding
+            // a.fun1(); //static bind method
+            // a.fun2();//Binding
 
             //Not Binding
 
             //TypeB b=new TypeB();
-          //  b = new TypeA();
-          //child is parent
-          // Animal--->Dog : Dog is Animal
-          // Dog --> (Dog)Animal
+            //  b = new TypeA();
+            //child is parent
+            // Animal--->Dog : Dog is Animal
+            // Dog --> (Dog)Animal
 
             //TypeA Ref= new TypeA();
-           // TypeB b = (TypeB)Ref;
+            // TypeB b = (TypeB)Ref;
+
+            // when U need Binding
+
+            //fullTime Employee id name address email salary
+            fullTimeEmployee b = new fullTimeEmployee()
+            {
+                id = 1,
+                name = "Ahmed",
+                email = "ahmed.a.com",
+                address = "cairo",
+                salary = 12000
+
+
+            };
+            partTimeEmployee w = new partTimeEmployee()
+            {
+                id = 11,
+                name = "Ali",
+                email = "ali.a.com",
+                address = "Alex",
+                HourRate=300,
+                NumberOfHour=200
+            };
+
+           // EmployeeProcess(w);
+            //NullReferenceException
+            
+
+
 
 
 
