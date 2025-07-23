@@ -1,4 +1,5 @@
 ﻿using OOPS02.Inheritance;
+using OOPS02.overriding;
 
 namespace OOPS02
 {
@@ -45,8 +46,22 @@ namespace OOPS02
             //(count, type order) parameter
 
 
-          //  sum(1, 2);
-          //  sum(1.2, 3.4);
+            //  sum(1, 2);
+            //  sum(1.2, 3.4);
+
+            //3.2.polymorphism methods (functions) overriding
+            //there are more than one function (in different class) these have same name 
+            // and signature with different behaviour
+
+            TypeB b = new TypeB() { A = 12, B = 13 };
+            Console.WriteLine(b.A);
+                Console.WriteLine(b.B);
+            //  b.A = 12;
+           // b.B = 13;
+            b.fun1();
+            b.fun2();
+
+
 
 
 
